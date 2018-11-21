@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Product</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,fetch"></script>
+  </head>
+  <body class="innerpage">
+    <div class="main">
+      <div class="section" id="header">
+        <ul class="menu">
+          <li><a href="index.html">скидки</a></li>
+          <li><a href="index.html">поиск лекарств</a></li>
+          <li><a href="index.html">каталог лекарств</a></li>
+          <li><a href="index.html">каталог аптек</a></li>
+          <li><a href="index.html">статьи/новости?</a></li>
+          <li><a href="index.html">информация</a></li>
+        </ul>
+        <div class="nav"><a class="logo" href="index.html">ЛекМос</a>
+          <div class="nav-button for-hover"><span class="for-hover"></span></div>
+        </div>
+      </div>
+      <div class="section" id="tools">
+        <div class="tools">
+          <input type="text"/><a class="for-hover" href="search_list.1.html"><i class="fas fa-search for-hover"></i></a>
+        </div>
+      </div>
+      <div class="section" id="item-header"><img class="product-img" src="images/product/aspirin.jpg"/>
+        <h1>Аспирин - <span>Комплекс пор шипучий для приготовления раствора для приема внутрь</span></h1>
+      </div>
+      <div class="section bttn-set">
+        <div><span class="bttn-icon" id="filter"><i class="fas fa-filter"></i></span><span class="bttn-icon bttn-sort" id="low-price"><i class="far fa-circle"></i> дешевле</span><span class="bttn-icon bttn-sort" id="nofar"><i class="far fa-circle"></i> ближе</span></div>
+        <div>
+          <button class="bttn popup-show" data-shadow="descr">описание</button>
+          <button class="bttn popup-show" data-shadow="map">карта</button>
+        </div>
+      </div>
+      <div class="filters">
+        <form action="post">
+          <div class="form-block">
+            <input type="checkbox" id="check1" name="check1"/>
+            <label for="check1">check1</label>
+            <input type="checkbox" id="check2" name="check2"/>
+            <label for="check2">check2</label>
+          </div>
+          <div class="form-block">
+            <input type="radio" id="radio1" name="name"/>
+            <label for="radio1">radio1</label>
+            <input type="radio" id="radio2" name="name"/>
+            <label for="radio2">radio2</label>
+          </div>
+        </form>
+      </div>
+      <div class="section apteka-block">
+        <div class="apteka">
+          <div class="apteka-info"><a href="">&quot;Озерки на Кузнецком&quot;</a>
+            <p>м. Кузнацкий мост</p>
+            <p>+7(945)55 55 66 88</p>
+          </div>
+          <div class="work-time"><small>Пн,Вт 9:00-18:00 | Ср-Пт 9:00-16:00 | Сб,Вс закрыто</small></div>
+          <div class="price">45.00</div>
+        </div>
+        <div class="apteka">
+          <div class="apteka-info"><a href="">&quot;Озерки на Кузнецком&quot;</a>
+            <p>м. Кузнацкий мост</p>
+            <p>+7(945)55 55 66 88</p>
+          </div>
+          <div class="h24"><span>24</span></div>
+          <div class="price">34.00</div>
+        </div>
+        <div class="apteka">
+          <div class="apteka-info"><a href="">&quot;ТРИКА в Текстильщиках&quot;</a>
+            <p>м. Текстильщики</p>
+            <p>+7(945)55 55 66 88</p>
+          </div>
+          <div class="price">44.00</div>
+        </div>
+        <div class="apteka">
+          <div class="apteka-info"><a href="">&quot;Озерки на Кузнецком&quot;</a>
+            <p>м. Кузнацкий мост</p>
+            <p>+7(945)55 55 66 88</p>
+          </div>
+          <div class="work-time"><small>Пн,Вт 9:00-18:00 | Ср-Пт 9:00-16:00 | Сб,Вс закрыто</small></div>
+          <div class="price">45.00</div>
+        </div>
+        <div class="apteka">
+          <div class="apteka-info"><a href="">&quot;A-MEGA, г.Жуковский, ул.Лацкова, д.2/3&quot;</a>
+            <p></p>
+            <p>+7(945)55 55 66 88</p>
+          </div>
+          <div class="h24"><span>24</span></div>
+          <div class="price">48.00</div>
+        </div>
+        <div class="apteka">
+          <div class="apteka-info"><a href="">&quot;ТРИКА в Текстильщиках&quot;</a>
+            <p>м. Текстильщики</p>
+            <p>+7(945)55 55 66 88</p>
+          </div>
+          <div class="price">44.00</div>
+        </div>
+        <div class="apteka">
+          <div class="apteka-info"><a href="">&quot;Озерки на Кузнецком&quot;</a>
+            <p>м. Кузнацкий мост</p>
+            <p>+7(945)55 55 66 88</p>
+          </div>
+          <div class="h24"><span>24</span></div>
+          <div class="price">34.00</div>
+        </div>
+        <div class="apteka">
+          <div class="apteka-info"><a href="">&quot;A-MEGA, г.Жуковский, ул.Лацкова, д.2/3&quot;</a>
+            <p></p>
+            <p>+7(945)55 55 66 88</p>
+          </div>
+          <div class="h24"><span>24</span></div>
+          <div class="price">48.00</div>
+        </div>
+        <div class="apteka">
+          <div class="apteka-info"><a href="">&quot;ТРИКА в Текстильщиках&quot;</a>
+            <p>м. Текстильщики</p>
+            <p>+7(945)55 55 66 88</p>
+          </div>
+          <div class="price">44.00</div>
+        </div>
+      </div>
+      <div class="pagination"><a href="index.html"><i class="fas fa-angle-left"></i></a><a href="index.html">1</a><a class="curr-page" href="">2</a><span>...</span><a href="index.html">10</a><a href="index.html"><i class="fas fa-angle-right"></i></a></div>
+      <div class="section" id="footer">
+        <div class="social"><a href="index.html"><i class="fab fa-twitter"></i></a><a href="index.html"><i class="fab fa-facebook-f"></i></a><a href="index.html"><i class="fab fa-vk"></i></a><a href="index.html"><i class="fab fa-viber"></i></a><a href="index.html"><i class="fab fa-whatsapp"></i></a><a href="index.html"><i class="fab fa-telegram-plane"></i></a></div>
+        <p>© Все права защищены 2012-2018</p>
+      </div>
+      <div class="shadow">
+        <div class="popup-block">
+          <div class="close popup-show"><i class="material-icons">close</i></div>
+          <h2>Аспирин - <span>Комплекс пор шипучий для приготовления раствора для приема внутрь</span></h2>
+          <div class="popup-cont" id="descr">
+            <p class="pgf">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue blandit mi, vitae auctor odio vehicula ut. Duis ornare porta odio, nec dapibus sapien lobortis nec. Phasellus id orci ut ante semper ultrices a rhoncus felis. Fusce ac auctor nulla. Sed quis augue at tortor auctor euismod a at massa. Duis congue fermentum enim at mollis. Duis at mi sit amet enim dictum gravida eget ut velit. Cras aliquam ullamcorper erat id facilisis. Quisque vestibulum maximus hendrerit. Ut feugiat maximus eros vitae facilisis. Duis hendrerit, magna non venenatis rhoncus, metus orci lacinia libero, non porta urna lacus at neque. Ut ut metus auctor, convallis quam quis, cursus lorem.</p>
+            <p class="pgf">Sed sed viverra enim. Nunc sodales eros vitae dui mattis rhoncus. In et purus non justo sodales porta. Phasellus molestie dapibus libero. Cras vitae lacus accumsan, bibendum ex condimentum, euismod arcu. Praesent condimentum, magna et mollis vulputate, nibh augue sagittis nulla, vel vulputate sapien massa eu justo. Donec sed sapien placerat, malesuada mi nec, dictum enim. Aenean diam libero, iaculis quis imperdiet nec, consectetur id diam.</p>
+            <p class="pgf">Aenean a dolor placerat sem efficitur aliquet. Fusce eget purus in arcu lacinia blandit. Nulla sed neque tortor. Ut vitae diam id nisl condimentum blandit sit amet viverra leo. Fusce accumsan eros tortor, vel cursus dui vehicula non. Etiam semper diam sem, a venenatis nunc pellentesque vel. Quisque est nisi, sagittis in vehicula non, imperdiet vestibulum nisl. Nam a nibh quis ex scelerisque hendrerit sed sed magna. Cras in augue tincidunt, commodo ipsum sit amet, consequat arcu. Duis venenatis diam eget lorem condimentum, a tempor dui rhoncus. Nunc tempor neque sed eleifend suscipit.</p>
+          </div>
+          <div class="popup-cont" id="map">
+            <script src="http://maps.google.com/maps/api/js?v=3&amp;sensor=true&amp;key=AIzaSyCLbTE-bN4peMbHv4PKlGqxGIQoXiiM3Gw"></script>
+            <div id="gmap"></div>
+            <script src="js/gmap.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
