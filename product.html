@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
-    <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,fetch"></script>
+    <script src="vendor/js/jquery-3.3.1.min.js"></script>
   </head>
   <body class="innerpage">
     <div class="main product">
       <div class="section" id="header">
-        <div class="nav"><a class="logo" href="index.html">ЛекМос</a><a class="cart" href="cart.html"><i class="fas fa-shopping-cart"></i>
+        <div class="nav"><a class="logo" href="index.html">ЛекМос</a><a class="cart" href="cart.html"><span></span>
             <div class="cart-qtty"><span>88</span></div></a>
           <div class="nav-button"><span></span></div>
         </div>
@@ -26,57 +26,57 @@
         </div>
       </div>
       <div class="section" id="header-product-name"><img class="product-img" src="images/product/aspirin.jpg"/>
-        <h1 class="light">Аспирин - <span>Комплекс пор шипучий для приготовления раствора для приема внутрь</span></h1>
-      </div>
-      <div class="section tool-set bttn-set"><span class="bttn-icon" id="filter"><i class="fas fa-filter"></i></span>
-        <div class="bttn-box"><span class="bttn-icon bttn-sort" id="low-price"><i class="far fa-circle"></i><span>дешевле</span></span><span class="bttn-icon bttn-sort" id="nofar"><i class="far fa-circle"></i><span>ближе</span></span></div>
-        <div class="bttn-box">
-          <button class="bttn popup-show" data-shadow="descr">описание</button>
-          <button class="bttn popup-show" data-shadow="map">карта</button>
-        </div>
-      </div>
-      <div id="filters">
-        <form action="post" id="form-filters">
-          <div class="form-filters">
-            <div class="form-block">
-              <div class="form-el">
-                <input type="checkbox" id="check1" name="check1"/>
-                <label for="check1"><i class="far fa-square"></i><i class="fas fa-check-square"></i>check1</label>
-              </div>
-              <div class="form-el">
-                <input type="checkbox" id="check2" name="check2"/>
-                <label for="check2"><i class="far fa-square"></i><i class="fas fa-check-square"></i>check2</label>
-              </div>
-            </div>
-            <div class="form-block">
-              <div class="form-el">
-                <input type="radio" id="radio1" name="name"/>
-                <label for="radio1"><i class="far fa-circle"></i><i class="fas fa-check-circle"></i>radio1</label>
-              </div>
-              <div class="form-el">
-                <input type="radio" id="radio2" name="name"/>
-                <label for="radio2"><i class="far fa-circle"></i><i class="fas fa-check-circle"></i>radio2</label>
-              </div>
-            </div>
+        <h1 class="light">Аспирин<span>- Комплекс пор шипучий для приготовления раствора для приема внутрь</span></h1>
+        <div class="tool-set bttn-set"><span class="bttn-icon" id="filter"><i class="fas fa-filter"></i></span>
+          <div class="bttn-box"><span class="bttn-icon bttn-sort" id="low-price"><i class="far fa-circle"></i><span>дешевле</span></span><span class="bttn-icon bttn-sort" id="nofar"><i class="far fa-circle"></i><span>ближе</span></span></div>
+          <div class="bttn-box">
+            <button class="bttn popup-show" data-shadow="descr">описание</button>
+            <button class="bttn popup-show" data-shadow="map">карта</button>
           </div>
-        </form>
+        </div>
+        <div id="filters">
+          <form action="post" id="form-filters">
+            <div class="form-filters">
+              <div class="form-block">
+                <div class="form-el">
+                  <input class="type1" type="checkbox" name="type1"/>
+                  <label for="type1"><i class="far fa-square"></i><i class="fas fa-check-square"></i>check1</label>
+                </div>
+                <div class="form-el">
+                  <input class="type1" type="checkbox" name="type1"/>
+                  <label for="type1"><i class="far fa-square"></i><i class="fas fa-check-square"></i>check2</label>
+                </div>
+              </div>
+              <div class="form-block">
+                <div class="form-el">
+                  <input class="name" type="radio" name="name"/>
+                  <label for="name"><i class="far fa-circle"></i><i class="fas fa-check-circle"></i>radio1</label>
+                </div>
+                <div class="form-el">
+                  <input class="name" type="radio" name="name"/>
+                  <label for="name"><i class="far fa-circle"></i><i class="fas fa-check-circle"></i>radio2</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
       <div class="section tbl-block pharmacy-list">
         <div class="tbl-tr pharmacy-list-item">
           <div class="apteka-info"><a href="pharmacy.html">&quot;Озерки на Кузнецком&quot;</a>
-            <p>м. Кузнацкий мост</p>
+            <p class="metro line1">м. Кузнацкий мост</p>
             <p>+7(945)55 55 66 88</p>
           </div>
           <div class="work-time"><small>Пн,Вт 9:00-18:00 | Ср-Пт 9:00-16:00 | Сб,Вс закрыто</small></div>
           <div class="apteka-func">
-            <div class="cart-fororder"><i class="fas fa-cart-arrow-down"></i>
+            <div class="cart-fororder"><span></span>
             </div>
             <div class="price">45.00</div>
           </div>
         </div>
         <div class="tbl-tr pharmacy-list-item">
           <div class="apteka-info"><a href="pharmacy.html">&quot;Озерки на Кузнецком&quot;</a>
-            <p>м. Кузнацкий мост</p>
+            <p class="metro line1">м. Кузнацкий мост</p>
             <p>+7(945)55 55 66 88</p>
           </div>
           <div class="apteka-func">
@@ -88,7 +88,7 @@
         </div>
         <div class="tbl-tr pharmacy-list-item">
           <div class="apteka-info"><a href="pharmacy.html">&quot;ТРИКА в Текстильщиках&quot;</a>
-            <p>м. Текстильщики</p>
+            <p class="metro line1">м. Текстильщики</p>
             <p>+7(945)55 55 66 88</p>
           </div>
           <div class="apteka-func">
@@ -99,19 +99,19 @@
         </div>
         <div class="tbl-tr pharmacy-list-item">
           <div class="apteka-info"><a href="pharmacy.html">&quot;Озерки на Кузнецком&quot;</a>
-            <p>м. Кузнацкий мост</p>
+            <p class="metro line1">м. Кузнацкий мост</p>
             <p>+7(945)55 55 66 88</p>
           </div>
           <div class="work-time"><small>Пн,Вт 9:00-18:00 | Ср-Пт 9:00-16:00 | Сб,Вс закрыто</small></div>
           <div class="apteka-func">
-            <div class="cart-fororder"><i class="fas fa-cart-arrow-down"></i>
+            <div class="cart-fororder"><span></span>
             </div>
             <div class="price">45.00</div>
           </div>
         </div>
         <div class="tbl-tr pharmacy-list-item">
           <div class="apteka-info"><a href="pharmacy.html">&quot;A-MEGA, г.Жуковский, ул.Лацкова, д.2/3&quot;</a>
-            <p></p>
+            <p class="metro line1"></p>
             <p>+7(945)55 55 66 88</p>
           </div>
           <div class="apteka-func">
@@ -123,18 +123,18 @@
         </div>
         <div class="tbl-tr pharmacy-list-item">
           <div class="apteka-info"><a href="pharmacy.html">&quot;ТРИКА в Текстильщиках&quot;</a>
-            <p>м. Текстильщики</p>
+            <p class="metro line1">м. Текстильщики</p>
             <p>+7(945)55 55 66 88</p>
           </div>
           <div class="apteka-func">
-            <div class="cart-fororder"><i class="fas fa-cart-arrow-down"></i>
+            <div class="cart-fororder"><span></span>
             </div>
             <div class="price">44.00</div>
           </div>
         </div>
         <div class="tbl-tr pharmacy-list-item">
           <div class="apteka-info"><a href="pharmacy.html">&quot;Озерки на Кузнецком&quot;</a>
-            <p>м. Кузнацкий мост</p>
+            <p class="metro line1">м. Кузнацкий мост</p>
             <p>+7(945)55 55 66 88</p>
           </div>
           <div class="apteka-func">
@@ -146,19 +146,19 @@
         </div>
         <div class="tbl-tr pharmacy-list-item">
           <div class="apteka-info"><a href="pharmacy.html">&quot;A-MEGA, г.Жуковский, ул.Лацкова, д.2/3&quot;</a>
-            <p></p>
+            <p class="metro line1"></p>
             <p>+7(945)55 55 66 88</p>
           </div>
           <div class="apteka-func">
             <div class="h24"><span>24</span></div>
-            <div class="cart-fororder"><i class="fas fa-cart-arrow-down"></i>
+            <div class="cart-fororder"><span></span>
             </div>
             <div class="price">48.00</div>
           </div>
         </div>
         <div class="tbl-tr pharmacy-list-item">
           <div class="apteka-info"><a href="pharmacy.html">&quot;ТРИКА в Текстильщиках&quot;</a>
-            <p>м. Текстильщики</p>
+            <p class="metro line1">м. Текстильщики</p>
             <p>+7(945)55 55 66 88</p>
           </div>
           <div class="apteka-func">
@@ -177,7 +177,8 @@
     <div class="shadow">
       <div class="popup-block">
         <div class="close popup-show"><i class="material-icons">close</i></div>
-        <h2>Аспирин - <span>Комплекс пор шипучий для приготовления раствора для приема внутрь</span></h2>
+        <h2>Аспирин<span>- Комплекс пор шипучий для приготовления раствора для приема внутрь</span>
+        </h2>
         <div class="popup-cont" id="descr">
           <p class="pgf">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue blandit mi, vitae auctor odio vehicula ut. Duis ornare porta odio, nec dapibus sapien lobortis nec. Phasellus id orci ut ante semper ultrices a rhoncus felis. Fusce ac auctor nulla. Sed quis augue at tortor auctor euismod a at massa. Duis congue fermentum enim at mollis. Duis at mi sit amet enim dictum gravida eget ut velit. Cras aliquam ullamcorper erat id facilisis. Quisque vestibulum maximus hendrerit. Ut feugiat maximus eros vitae facilisis. Duis hendrerit, magna non venenatis rhoncus, metus orci lacinia libero, non porta urna lacus at neque. Ut ut metus auctor, convallis quam quis, cursus lorem.</p>
           <p class="pgf">Sed sed viverra enim. Nunc sodales eros vitae dui mattis rhoncus. In et purus non justo sodales porta. Phasellus molestie dapibus libero. Cras vitae lacus accumsan, bibendum ex condimentum, euismod arcu. Praesent condimentum, magna et mollis vulputate, nibh augue sagittis nulla, vel vulputate sapien massa eu justo. Donec sed sapien placerat, malesuada mi nec, dictum enim. Aenean diam libero, iaculis quis imperdiet nec, consectetur id diam.</p>

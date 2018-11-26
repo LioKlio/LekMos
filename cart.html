@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
-    <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,fetch"></script>
+    <script src="vendor/js/jquery-3.3.1.min.js"></script>
   </head>
   <body class="innerpage">
-    <div class="main inner">
+    <div class="main cart">
       <div class="section" id="header">
-        <div class="nav"><a class="logo" href="index.html">ЛекМос</a><a class="cart" href="cart.html"><i class="fas fa-shopping-cart"></i>
+        <div class="nav"><a class="logo" href="index.html">ЛекМос</a><a class="cart" href="cart.html"><span></span>
             <div class="cart-qtty"><span>88</span></div></a>
           <div class="nav-button"><span></span></div>
         </div>
@@ -25,6 +25,153 @@
           <input type="text"/><a href="search_list.1.html"><i class="fas fa-search"></i></a>
         </div>
       </div>
+      <div class="section cart-tbl">
+        <div class="tbl-tr cart-pharmacy">
+          <div class="cart-pharmacy-address"><a class="pharmacy-name">&quot;Озерки на Кузнецком&quot;</a>
+            <p class="metro line1">м. Кузнацкий мост</p>
+            <p class="phone">555555</p>
+          </div><a class="bttn " href="/">Условия доставки</a>
+          <div class="cart-pharmacy-product-qnty"><span>3</span><i class="material-icons arrow_right">arrow_right</i><i class="material-icons arrow_drop_down">arrow_drop_down</i></div>
+        </div>
+        <div class="cart-pharmacy-data">
+          <div class="cart-pharmacy-products">
+            <div class="cart-pharmacy-product">
+              <div class="product-name">Аспирин - Комплекс пор шипучий для приготовления раствора для приема внутрь</div>
+              <div class="product-qnty">
+                <input class="qnty" type="text" value="1" name="qnty"/><a class="plus">+</a><a class="minus">-</a>
+              </div>
+              <div class="price">42.51</div>
+              <div class="summ">42.51</div>
+              <button class="bttn ">X</button>
+            </div>
+            <div class="cart-pharmacy-product">
+              <div class="product-name">Аспирин - Комплекс пор шипучий для приготовления раствора для приема внутрь</div>
+              <div class="product-qnty">
+                <input type="text" value="1"/><a class="plus">+</a><a class="minus">-</a>
+              </div>
+              <div class="price">42.51</div>
+              <div class="summ">42.51</div>
+              <button class="bttn ">X</button>
+            </div>
+            <div class="cart-pharmacy-product">
+              <div class="product-name">Аспирин - Комплекс пор шипучий для приготовления раствора для приема внутрь</div>
+              <div class="product-qnty">
+                <input type="text" value="1"/><a class="plus">+</a><a class="minus">-</a>
+              </div>
+              <div class="price">42.51</div>
+              <div class="summ">42.51</div>
+              <button class="bttn ">X</button>
+            </div>
+            <div class="cart-pharmacy-products-summ"><span>Сумма заказа:<strong>127.53</strong></span></div>
+          </div>
+          <div class="client-data">
+            <form action="post">
+              <div class="form-el requiredField">
+                <label for="name">Ф.И.О<span>*</span></label>
+                <input class="name" type="text" name="name"/>
+              </div>
+              <div class="form-el requiredField">
+                <label for="phone">Телефон<span>*</span></label>
+                <input class="phone" type="phone" name="phone"/>
+              </div>
+              <div class="form-el requiredField">
+                <label for="address">Адрес<span>*</span></label>
+                <input class="address" type="text" name="address"/>
+              </div>
+              <div class="form-el">
+                <label for="mail">E-mail</label>
+                <input class="mail" type="email" name="mail"/>
+              </div>
+              <div class="form-el">
+                <label for="comment">Примечания к заказу</label>
+                <input class="comment" type="text" name="comment"/>
+              </div>
+              <div class="agree">
+                <div class="form-el">
+                  <input class="agree_inp" type="checkbox" name="agree_inp"/>
+                  <label for="agree_inp"><i class="far fa-square"></i><i class="fas fa-check-square"></i>Нажимая на кнопку «Отправить», я принимаю Пользовательское соглашение и даю согласие на обработку моих персональных данных</label>
+                </div>
+              </div>
+              <div class="bttn-set">
+                <button class="bttn  send">отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="tbl-tr cart-pharmacy">
+          <div class="cart-pharmacy-address"><a class="pharmacy-name">&quot;Озерки на Кузнецком&quot;</a>
+            <p class="metro line1">м. Кузнацкий мост</p>
+            <p class="phone">555555</p>
+          </div><a class="bttn " href="/">Условия доставки</a>
+          <div class="cart-pharmacy-product-qnty"><span>3</span><i class="material-icons arrow_right">arrow_right</i><i class="material-icons arrow_drop_down">arrow_drop_down</i></div>
+        </div>
+        <div class="cart-pharmacy-data">
+          <div class="cart-pharmacy-products">
+            <div class="cart-pharmacy-product">
+              <div class="product-name">Аспирин - Комплекс пор шипучий для приготовления раствора для приема внутрь</div>
+              <div class="product-qnty">
+                <input class="qnty" type="text" value="1" name="qnty"/><a class="plus">+</a><a class="minus">-</a>
+              </div>
+              <div class="price">42.51</div>
+              <div class="summ">42.51</div>
+              <button class="bttn ">X</button>
+            </div>
+            <div class="cart-pharmacy-product">
+              <div class="product-name">Аспирин - Комплекс пор шипучий для приготовления раствора для приема внутрь</div>
+              <div class="product-qnty">
+                <input type="text" value="1"/><a class="plus">+</a><a class="minus">-</a>
+              </div>
+              <div class="price">42.51</div>
+              <div class="summ">42.51</div>
+              <button class="bttn ">X</button>
+            </div>
+            <div class="cart-pharmacy-product">
+              <div class="product-name">Аспирин - Комплекс пор шипучий для приготовления раствора для приема внутрь</div>
+              <div class="product-qnty">
+                <input type="text" value="1"/><a class="plus">+</a><a class="minus">-</a>
+              </div>
+              <div class="price">42.51</div>
+              <div class="summ">42.51</div>
+              <button class="bttn ">X</button>
+            </div>
+            <div class="cart-pharmacy-products-summ"><span>Сумма заказа:<strong>127.53</strong></span></div>
+          </div>
+          <div class="client-data">
+            <form action="post">
+              <div class="form-el requiredField">
+                <label for="name">Ф.И.О<span>*</span></label>
+                <input class="name" type="text" name="name"/>
+              </div>
+              <div class="form-el requiredField">
+                <label for="phone">Телефон<span>*</span></label>
+                <input class="phone" type="phone" name="phone"/>
+              </div>
+              <div class="form-el requiredField">
+                <label for="address">Адрес<span>*</span></label>
+                <input class="address" type="text" name="address"/>
+              </div>
+              <div class="form-el">
+                <label for="mail">E-mail</label>
+                <input class="mail" type="email" name="mail"/>
+              </div>
+              <div class="form-el">
+                <label for="comment">Примечания к заказу</label>
+                <input class="comment" type="text" name="comment"/>
+              </div>
+              <div class="agree">
+                <div class="form-el">
+                  <input class="agree_inp" type="checkbox" name="agree_inp"/>
+                  <label for="agree_inp"><i class="far fa-square"></i><i class="fas fa-check-square"></i>Нажимая на кнопку «Отправить», я принимаю Пользовательское соглашение и даю согласие на обработку моих персональных данных</label>
+                </div>
+              </div>
+              <div class="bttn-set">
+                <button class="bttn  send">отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="pagination"><a href="index.html"><i class="fas fa-angle-left"></i></a><a href="index.html">1</a><a class="curr-page" href="">2</a><span>...</span><a href="index.html">10</a><a href="index.html"><i class="fas fa-angle-right"></i></a></div>
       <div class="section" id="footer">
         <div class="social"><a href="index.html"><i class="fab fa-twitter"></i></a><a href="index.html"><i class="fab fa-facebook-f"></i></a><a href="index.html"><i class="fab fa-vk"></i></a><a href="index.html"><i class="fab fa-viber"></i></a><a href="index.html"><i class="fab fa-whatsapp"></i></a><a href="index.html"><i class="fab fa-telegram-plane"></i></a></div>
         <p>© Все права защищены 2012-2018</p>
