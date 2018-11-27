@@ -14,10 +14,18 @@
   </head>
   <body class="innerpage">
     <div class="main pharmacy">
+      <ul class="navigation">
+        <li><a href="index.html">скидки</a></li>
+        <li><a href="index.html">поиск лекарств</a></li>
+        <li><a href="index.html">каталог лекарств</a></li>
+        <li><a href="index.html">каталог аптек</a></li>
+        <li><a href="index.html">статьи/новости?</a></li>
+        <li><a href="index.html">информация</a></li>
+      </ul>
       <div class="section" id="header">
         <div class="nav"><a class="logo" href="index.html">ЛекМос</a><a class="cart" href="cart.html"><span></span>
             <div class="cart-qtty"><span>88</span></div></a>
-          <div class="nav-button"><span></span></div>
+          <button class="js-menu nav-button" type="button"><span class="bar"></span></button>
         </div>
       </div>
       <div class="section" id="tools">
@@ -45,11 +53,11 @@
     </div>
     <div class="shadow">
       <div class="popup-block">
-        <div class="close popup-show"><i class="material-icons">close</i></div>
-        <h2>&quot;Озерки на Кузнецком&quot;
-        </h2>
+        <div class="close popup-show close-icon"><i class="material-icons">close</i></div>
         <div class="popup-cont" id="map">
           <script src="http://maps.google.com/maps/api/js?v=3&amp;sensor=true&amp;key=AIzaSyCLbTE-bN4peMbHv4PKlGqxGIQoXiiM3Gw"></script>
+          <h2>&quot;Озерки на Кузнецком&quot;
+          </h2>
           <div id="gmap"></div>
           <script src="js/gmap.js"></script>
         </div>
